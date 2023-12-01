@@ -78,6 +78,7 @@ def tekst_dag(dagnum):
 	except IndexError as e:
 		print('Dagnummer moet tussen 0 en 6 liggen')
 		raise e
+	
 print(tekst_dag(3))
 print(tekst_dag(7))
 '''
@@ -85,9 +86,10 @@ print(tekst_dag(7))
 #
 # turtle graphics
 #
-'''
+
 import turtle
 
+'''
 # triangle
 turtle.penup()
 turtle.setposition(-100, -100)
@@ -104,6 +106,7 @@ turtle.penup()
 turtle.setposition(200, 200)
 turtle.pendown()
 turtle.circle(100)
+'''
 
 import math
 
@@ -128,4 +131,4 @@ while radius < 300:
     radius += 0.2
 
 turtle.done()
-'''
+

@@ -1,18 +1,19 @@
 #
 # driehoek & bereken omtrek
 #
-'''
+
+
 class Veelhoek:
     def __init__(self, n):
         self.aantal_zijden = n
+        
+    def __str__(self):
+        return f'{self.aantal_zijden} zijden'        
      
 class Driehoek(Veelhoek):
     def __init__(self, sides):
         super().__init__(len(sides))
         self.sides = sides
-        
-    def __str__(self):
-        return f'{self.aantal_zijden} zijden'
     
     def bereken_omtrek(self):
         return sum(self.sides)
@@ -60,7 +61,7 @@ vk = Vierkant(64)
 print(vk)
 print('omtrek', vk.bereken_omtrek())
 print('oppervlakte', vk.bereken_oppervlakte())
-'''
+
 
 #
 # webwinkel
